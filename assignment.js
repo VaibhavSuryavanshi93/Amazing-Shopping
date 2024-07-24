@@ -1,18 +1,18 @@
 document.querySelectorAll(".nav-link").forEach((link) => {
-    link.addEventListener("click", function (e) {
-        e.preventDefault();
-        const category = this.getAttribute("data-category");
-        document.querySelectorAll(".product").forEach((product) => {
-            if (
-                category === "all" ||
-                product.getAttribute("data-category") === category
-            ) {
-                product.style.display = "block";
-            } else {
-                product.style.display = "none";
-            }
-        });
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    const category = this.getAttribute("data-category");
+    document.querySelectorAll(".product").forEach((product) => {
+      if (
+        category === "all" ||
+        product.getAttribute("data-category") === category
+      ) {
+        product.style.display = "block";
+      } else {
+        product.style.display = "none";
+      }
     });
+  });
 });
 
 document
@@ -44,3 +44,14 @@ document
       }
     });
   });
+  
+// this code redirect product html file  
+
+// document.querySelectorAll(".product").forEach((product) => {
+//   product.addEventListener("click", (event) => {
+//     const href = product.getAttribute("data-href");
+//     if (href) {
+//       window.location.href = href;
+//     }
+//   });
+// });
