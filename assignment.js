@@ -44,8 +44,8 @@ document
       }
     });
   });
-  
-// this code redirect product html file  
+
+// this code redirect product catalog html file  
 
 // document.querySelectorAll(".product").forEach((product) => {
 //   product.addEventListener("click", (event) => {
